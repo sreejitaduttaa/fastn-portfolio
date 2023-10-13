@@ -1,0 +1,515 @@
+-- boolean $showa: false
+
+-- component profile:
+caption name:
+ftd.image-src profile-pic:
+body desc:
+
+
+-- ftd.column:
+width: fill-container
+height.fixed.px: 220 
+align-content: center
+overflow: hidden
+padding.px: 30
+background.solid: #242430
+
+-- ftd.image: $profile.profile-pic
+height.fixed.px: 110
+width.fixed.px: 110 
+border-radius.px: 110
+fit: fill
+margin-top.px: 30
+margin.px: 10
+
+-- ftd.text: $profile.name
+role: $name-type
+color: #fff
+
+-- ftd.text: $profile.desc
+role: $desc-type
+margin-bottom.px: 20
+color: #7D7D80
+
+-- end: ftd.column
+
+-- end: profile
+
+
+-- component details:
+optional string residence: NULL
+optional string city: NULL
+optional string age: NULL
+
+-- ftd.column:
+width: fill-container
+padding-top.px: 30 
+padding-bottom.px: 10 
+padding-horizontal.px: 20 
+spacing.fixed.px: 4
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+if: {$details.residence != NULL}
+
+-- ftd.text: Residence:
+role: $details-topic-type
+color: #fff
+
+-- ftd.text: $details.residence
+role: $details-type
+color: #7D7D80
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+if: {$details.city != NULL}
+
+-- ftd.text: City:
+role: $details-topic-type
+color: #fff
+
+-- ftd.text: $details.city
+role: $details-type
+color: #7D7D80
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+if: {$details.age != NULL}
+
+-- ftd.text: Age:
+role: $details-topic-type
+color: #fff
+
+-- ftd.text: $details.age
+role: $details-type
+color: #7D7D80
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: details
+
+
+
+-- component line:
+
+-- ftd.container:
+width: fill-container
+padding-horizontal.px: 20 
+padding-vertical.px: 10 
+
+-- ftd.container:
+width: fill-container
+border-top-width.px: 1
+opacity: 0.3
+align-self: center
+border-color: #7D7D80
+
+-- end: ftd.container
+
+-- end: ftd.container
+
+-- end: line 
+
+
+-- component heading:
+caption topic:
+
+-- ftd.text: $heading.topic
+role: $heading-type
+color: #fff
+width: fill-container
+padding-vertical.px: 10 
+padding-horizontal.px: 20 
+
+-- end: heading
+
+-- component edu:
+string institution: 
+optional string degree: NULL
+optional string marks: NULL
+optional string year: NULL
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+padding-vertical.px: 10 
+padding-horizontal.px: 20 
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 4
+
+-- ftd.text: $edu.institution
+role: $edu-type
+color: #fff
+
+-- ftd.text: $edu.degree
+role: $edu-type
+color: #7D7D80
+if: {$edu.degree != NULL}
+
+-- ftd.text: $edu.marks
+role: $edu-type
+color: #7D7D80
+if: {$edu.marks != NULL}
+
+-- end: ftd.column
+
+-- ftd.text: $edu.year
+role: $edu-type
+padding-left.px: 3 
+color: #7D7D80
+if: {$edu.year != NULL}
+
+-- end: ftd.row
+
+-- end: edu
+
+-- component work:
+string organisation: 
+optional string position: NULL
+optional string location: NULL
+string duration: 
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+padding-vertical.px: 10 
+padding-horizontal.px: 20 
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 4
+
+-- ftd.text: $work.organisation
+role: $edu-type
+color: #fff
+
+-- ftd.text: $work.position
+role: $edu-type
+color: #7D7D80
+if: {$work.position != NULL}
+
+-- ftd.text: $work.location
+role: $edu-type
+color: #7D7D80
+if: {$work.location != NULL}
+
+-- end: ftd.column
+
+-- ftd.text: $work.duration
+role: $edu-type
+padding-left.px: 3 
+color: #7D7D80
+
+-- end: ftd.row
+
+-- end: work
+
+-- component skill-set:
+caption skill-1-name: 
+;; caption skill-1-percent:
+optional string skill-2-name: NULL
+;; caption skill-2-percent: NULL
+optional string skill-3-name: NULL
+;; caption skill-3-percent: NULL
+
+-- ftd.row:
+
+
+-- ftd.column:
+align-content: center
+margin.px: 10
+
+-- ftd.column:
+width.fixed.px: 35
+height.fixed.px: 35
+border-radius.px: 500
+align-content: center
+overflow: hidden
+padding.px: 30
+border-left-color: black
+border-color: #FFC107 
+border-width.px: 3
+
+-- ftd.text: 80%
+color: #fff
+role: $skill1-type
+text-align: center
+
+-- end: ftd.column
+
+-- ftd.text: $skill-set.skill-1-name
+role: $skill1-type
+padding-top.px: 8
+color: #fff
+
+-- end: ftd.column
+
+
+-- ftd.column:
+align-content: center
+margin.px: 10
+if: {$skill-set.skill-2-name != NULL}
+
+-- ftd.column:
+width.fixed.px: 35
+height.fixed.px: 35
+border-radius.px: 500
+align-content: center
+overflow: hidden
+padding.px: 30
+border-left-color: black
+border-color: #FFC107 
+border-width.px: 3
+
+-- ftd.text: 80%
+color: #fff
+role: $skill1-type
+text-align: center
+
+-- end: ftd.column
+
+-- ftd.text: $skill-set.skill-2-name
+role: $skill1-type
+padding-top.px: 8
+color: #fff
+
+-- end: ftd.column
+
+
+-- ftd.column:
+align-content: center
+margin.px: 10
+if: {$skill-set.skill-3-name != NULL}
+
+-- ftd.column:
+width.fixed.px: 35
+height.fixed.px: 35
+border-radius.px: 500
+align-content: center
+overflow: hidden
+padding.px: 30
+border-left-color: black
+border-color: #FFC107 
+border-width.px: 3
+
+-- ftd.text: 80%
+color: #fff
+role: $skill1-type
+text-align: center
+
+-- end: ftd.column
+
+-- ftd.text: $skill-set.skill-3-name
+role: $skill1-type
+padding-top.px: 8
+color: #fff
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: skill-set
+
+-- component skill-2:
+caption skill-name:
+decimal percent:
+
+-- ftd.column:
+align-content: center
+width: fill-container
+spacing.fixed.px: 4
+padding-horizontal.px: 20
+padding-vertical.px: 10 
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+
+-- ftd.text: $skill-2.skill-name
+color: #fff
+text-align: center
+role: $skill2-type
+
+-- ftd.row:
+
+-- ftd.decimal: $skill-2.percent
+color: #7D7D80
+text-align: center
+role: $skill2-type
+
+-- ftd.text: %
+color: #7D7D80
+role: $skill2-type
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- ftd.container:
+width: fill-container
+background.solid: #191923
+height.fixed.px: 3
+
+-- ftd.container: 
+width.fixed.percent: $skill-2.percent
+height: fill-container
+background.solid: #FFC107
+
+-- end: ftd.container
+
+-- end: ftd.container
+
+-- end: ftd.column
+
+-- end: skill-2
+
+-- component cv:
+caption link:
+
+-- ftd.row:
+width.fixed.px: 240
+margin-horizontal.px: 20
+margin-vertical.px: 10
+align-content: center
+cursor: pointer
+link: $cv.link
+border-radius.px: 5
+padding.px: 5
+open-in-new-tab: true 
+background.solid if { showa }: #272730
+background.solid: #242430
+$on-mouse-enter$: $ftd.set-bool($a = $showa, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $showa, v = false)
+
+-- ftd.text: RESUME
+color: #7D7D80
+role: $cv-type
+
+-- end: ftd.row
+
+-- end: cv
+
+-- component socials:
+caption boolean social: false
+optional string linkedin: NULL
+optional string github: NULL
+optional string twitter: NULL
+optional string instagram: NULL
+optional string facebook: NULL
+optional string discord: NULL
+
+
+-- ftd.row:
+width.fixed.px: 240
+margin-horizontal.px: 20
+margin-vertical.px: 10
+align-content: center
+spacing: space-evenly
+padding.px: 8
+background.solid: #242430
+border-radius.px: 5
+if: {$socials.social != false}
+
+-- ftd.image: $assets.files.assets.images.linkedin.png
+height.fixed.px: 20
+width.fixed.px: 20 
+if: {$socials.linkedin != NULL}
+cursor: pointer
+link: $socials.linkedin
+open-in-new-tab: true 
+
+-- ftd.image: $assets.files.assets.images.github.png
+height.fixed.px: 20
+width.fixed.px: 20 
+if: {$socials.github != NULL}
+cursor: pointer
+link: $socials.github
+open-in-new-tab: true 
+
+-- ftd.image: $assets.files.assets.images.twitter.png
+height.fixed.px: 20
+width.fixed.px: 20 
+if: {$socials.twitter != NULL}
+cursor: pointer
+link: $socials.twitter
+open-in-new-tab: true 
+
+-- ftd.image: $assets.files.assets.images.instagram.png
+height.fixed.px: 20
+width.fixed.px: 20 
+if: {$socials.instagram != NULL}
+cursor: pointer
+link: $socials.instagram
+open-in-new-tab: true 
+
+-- ftd.image: $assets.files.assets.images.discord.png
+height.fixed.px: 20
+width.fixed.px: 20 
+if: {$socials.discord != NULL}
+cursor: pointer
+link: $socials.discord
+open-in-new-tab: true 
+
+-- end: ftd.row
+
+-- end: socials
+
+
+-- ftd.type name-type:
+font-family: $assets.fonts.Poppins
+size.px: 16
+weight: 500
+letter-spacing.px: 1
+
+-- ftd.type desc-type:
+font-family: $assets.fonts.Poppins
+size.px: 12
+weight: 400
+letter-spacing.px: 1
+
+-- ftd.type heading-type:
+font-family: $assets.fonts.Poppins
+size.px: 14
+weight: 500
+
+-- ftd.type details-topic-type:
+font-family: $assets.fonts.Poppins
+size.px: 12
+weight: 500
+
+-- ftd.type details-type:
+font-family: $assets.fonts.Poppins
+size.px: 12
+weight: 400
+
+-- ftd.type edu-type:
+font-family: $assets.fonts.Poppins
+size.px: 12
+weight: 400
+
+-- ftd.type skill1-type:
+font-family: $assets.fonts.Poppins
+size.px: 13
+weight: 500
+
+-- ftd.type skill2-type:
+font-family: $assets.fonts.Poppins
+size.px: 13
+weight: 500
+
+-- ftd.type cv-type:
+font-family: $assets.fonts.Poppins
+size.px: 14
+weight: 500
+letter-spacing.px: 2

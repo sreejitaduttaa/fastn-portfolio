@@ -1,0 +1,105 @@
+-- import: sreejitaduttaa.github.io/fastn-portfolio/components/sidebar
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+background.solid: black
+;; #242430
+
+-- ftd.column:
+width.fixed.px: 280 
+height: fill-container
+background.solid: #1E1E28
+
+-- ftd.column:
+width: fill-container
+
+-- sidebar.profile: Sreejita Dutta
+profile-pic: $assets.files.assets.images.me.jpeg
+desc: Web Developer
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.px: 280 
+height: fill-container
+background.solid: #1E1E28
+overflow-y: auto 
+margin-bottom.px: 10
+
+-- sidebar.details: 
+residence: India
+city: Kolkata
+age: 19
+
+-- sidebar.cv: google.com
+
+-- sidebar.line:
+
+-- sidebar.heading: Coding 
+
+-- sidebar.skill-2: Flutter
+percent: 70
+
+-- sidebar.skill-2: HTML
+percent: 80
+
+-- sidebar.line:
+
+
+-- sidebar.heading: Skills 
+
+-- sidebar.skill-set:
+skill-1-name: Fastn 
+skill-2-name: CSS
+skill-3-name: JS
+
+-- sidebar.skill-set:
+skill-1-name: Fastn 
+;; skill-2-name: CSS
+;; skill-3-name: JS
+
+-- sidebar.line:
+
+-- sidebar.heading: Work 
+
+-- sidebar.work: 
+organisation: ABCD Enterprise
+position: Software Engineer
+location: Kolkata, West Bengal
+duration: 2020-2022
+
+-- sidebar.work: 
+organisation: Freelancing
+duration: 2022-present
+
+-- sidebar.line:
+
+-- sidebar.heading: Education 
+
+-- sidebar.edu: 
+institution: RCC Institution of Information Technology
+degree: BTech in Computer Science
+marks: CGPA-8.9
+year: 2022-2026
+
+-- sidebar.edu: 
+institution: Narayana School, Newtown
+degree: Higher Secondary Education
+marks: 91%
+year: 2020-2022
+
+-- sidebar.line:
+
+-- sidebar.socials: true
+linkedin: https://www.linkedin.com/in/sreejitadutta/
+github: https://github.com/sreejitaduttaa
+twitter: https://twitter.com/sreejitaduttaa
+instagram: https://www.instagram.com/_sreejitaa_/
+discord: https://discord.com/users/774948048916840469
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.row

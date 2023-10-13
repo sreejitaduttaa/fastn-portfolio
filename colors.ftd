@@ -1,0 +1,10 @@
+-- ftd.color main:
+light: white
+dark: black
+
+-- ftd.color gray:
+light: #7D7D80
+
+-- ftd.color theme:
+light: #FFC107
+
