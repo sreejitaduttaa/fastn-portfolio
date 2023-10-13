@@ -1,40 +1,105 @@
--- ds.page: Welcome to doc-site
+-- import: sreejitaduttaa.github.io/fastn-portfolio/components/sidebar
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+background.solid: black
+;; #242430
+
+-- ftd.column:
+width.fixed.px: 280 
+height: fill-container
+background.solid: #1E1E28
+
+-- ftd.column:
+width: fill-container
+
+-- sidebar.profile: Sreejita Dutta
+profile-pic: $assets.files.assets.images.me.jpeg
+desc: Web Developer
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.px: 280 
+height: fill-container
+background.solid: #1E1E28
+overflow-y: auto 
+margin-bottom.px: 10
+
+-- sidebar.details: 
+residence: India
+city: Kolkata
+age: 19
+
+-- sidebar.cv: google.com
+
+-- sidebar.line:
+
+-- sidebar.heading: Coding 
+
+-- sidebar.skill-2: Flutter
+percent: 70
+
+-- sidebar.skill-2: HTML
+percent: 80
+
+-- sidebar.line:
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- sidebar.heading: Skills 
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+-- sidebar.skill-set:
+skill-1-name: Fastn 
+skill-2-name: CSS
+skill-3-name: JS
 
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
+-- sidebar.skill-set:
+skill-1-name: Fastn 
+;; skill-2-name: CSS
+;; skill-3-name: JS
 
--- ds.h3: 🚀 Fast Track 
+-- sidebar.line:
 
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
+-- sidebar.heading: Work 
 
--- ds.h3: 🌟 Whats next?
+-- sidebar.work: 
+organisation: ABCD Enterprise
+position: Software Engineer
+location: Kolkata, West Bengal
+duration: 2020-2022
 
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
+-- sidebar.work: 
+organisation: Freelancing
+duration: 2022-present
 
--- ds.h3: 👀 Want to learn more?
+-- sidebar.line:
 
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- sidebar.heading: Education 
 
+-- sidebar.edu: 
+institution: RCC Institution of Information Technology
+degree: BTech in Computer Science
+marks: CGPA-8.9
+year: 2022-2026
 
--- ds.h3: 🎯 Used by?
+-- sidebar.edu: 
+institution: Narayana School, Newtown
+degree: Higher Secondary Education
+marks: 91%
+year: 2020-2022
 
-Our all documentation sites uses this `doc-site` theme.
+-- sidebar.line:
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
+-- sidebar.socials: true
+linkedin: https://www.linkedin.com/in/sreejitadutta/
+github: https://github.com/sreejitaduttaa
+twitter: https://twitter.com/sreejitaduttaa
+instagram: https://www.instagram.com/_sreejitaa_/
+discord: https://discord.com/users/774948048916840469
 
--- ds.h2: Learn fastn and become a pro?
+-- end: ftd.column
 
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- end: ftd.column
 
--- end: ds.page
+-- end: ftd.row

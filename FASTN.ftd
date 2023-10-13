@@ -16,4 +16,61 @@ favicon: /-/sreejitaduttaa.github.io/fastn-portfolio/favicon.ico
 
 # Home: index.html
 
-- Right Sidebar Sample: /sidebar/
+
+
+-- fastn.font: Poppins
+style: normal
+weight: 100
+woff2: -/sreejitaduttaa.github.io/poppins-font/static/Poppins-100-normal-latin.woff2
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    
+-- fastn.font: Poppins
+style: normal
+weight: 200
+woff2: -/sreejitaduttaa.github.io/poppins-font/static/Poppins-200-normal-latin.woff2
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    
+-- fastn.font: Poppins
+style: normal
+weight: 300
+woff2: -/sreejitaduttaa.github.io/poppins-font/static/Poppins-300-normal-latin.woff2
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    
+
+-- fastn.font: Poppins
+style: normal
+weight: 400
+woff2: -/sreejitaduttaa.github.io/poppins-font/static/Poppins-400-normal-latin.woff2
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    
+-- fastn.font: Poppins
+style: normal
+weight: 500
+woff2: -/sreejitaduttaa.github.io/poppins-font/static/Poppins-500-normal-latin.woff2
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        
+-- fastn.font: Poppins
+style: normal
+weight: 600
+woff2: -/sreejitaduttaa.github.io/poppins-font/static/Poppins-600-normal-latin.woff2
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    
+-- fastn.font: Poppins
+style: normal
+weight: 700
+woff2: -/sreejitaduttaa.github.io/poppins-font/static/Poppins-700-normal-latin.woff2
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+
+-- fastn.font: Poppins
+style: normal
+weight: 800
+woff2: -/sreejitaduttaa.github.io/poppins-font/static/Poppins-800-normal-latin.woff2
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    
+-- fastn.font: Poppins
+style: normal
+weight: 900
+woff2: -/sreejitaduttaa.github.io/poppins-font/static/Poppins-900-normal-latin.woff2
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    
+    
