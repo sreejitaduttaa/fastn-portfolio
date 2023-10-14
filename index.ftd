@@ -1,15 +1,16 @@
+;; -- import: sreejitaduttaa.github.io/fastn-portfolio/components
+-- import: sreejitaduttaa.github.io/fastn-portfolio/components/page
 -- import: sreejitaduttaa.github.io/fastn-portfolio/components/sidebar
 
 -- ftd.row:
 width: fill-container
 height: fill-container
-background.solid: black
-;; #242430
+background.solid: #1E1E28
 
 -- ftd.column:
 width.fixed.px: 280 
 height: fill-container
-background.solid: #1E1E28
+shadow: $s
 
 -- ftd.column:
 width: fill-container
@@ -32,7 +33,7 @@ residence: India
 city: Kolkata
 age: 19
 
--- sidebar.cv: google.com
+-- sidebar.cv: https://fastn.com/
 
 -- sidebar.line:
 
@@ -55,7 +56,7 @@ skill-2-name: CSS
 skill-3-name: JS
 
 -- sidebar.skill-set:
-skill-1-name: Fastn 
+skill-1-name: HTML 
 ;; skill-2-name: CSS
 ;; skill-3-name: JS
 
@@ -102,4 +103,91 @@ discord: https://discord.com/users/774948048916840469
 
 -- end: ftd.column
 
+
+-- ftd.column:
+width.fixed.calc: 100% - 330pxcc
+overflow-y: auto 
+padding-bottom.px: 25
+padding-horizontal.px: 25
+;; margin-horizontal.px: 25
+
+-- page.banner: 
+image: $assets.files.assets.images.banner.png
+
+-- page.heading: My Projects
+
+-- page.project-set:
+project-1: true
+title-1: Responsive Portfolio 
+desc-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet sapien at elit vestibulum imperdiet. Duis id consectetur erat. Nulla mattis sapien quis mollis sodales. Aliquam placerat metus id eros posuere
+socials-1: true
+github-1: https://github.com/sreejitaduttaa
+web-1: https://fastn.com/
+project-2: true
+title-2:  Lorem ipsum dolor sit amet, consectetur
+desc-2: enim ut libero mattis finibus. Duis vehicula mattis libero, sed porta enim tempor sit amet. Curabitur posuere feugiat mauris vel hendrerit. Nulla
+socials-2: true
+github-2: https://github.com/sreejitaduttaa
+project-3: true
+title-3: Nulla facilisis enim vel sapien 
+desc-3: ulla facilisis enim vel sapien hendrerit tincidunt. Aenean convallis velit quam, a pellentesque elit tincidunt a. Curabitur auctor metus non placerat consectetur.
+socials-3: true
+github-3: https://github.com/sreejitaduttaa
+web-3: https://fastn.com/
+
+-- page.project-set:
+project-1: true
+title-1:  consectetur adipiscing elit
+desc-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet sapien at elit vestibulum imperdiet. Duis id consectetur erat. Nulla mattis sapien quis mollis sodales. 
+socials-1: true
+github-1: https://github.com/sreejitaduttaa
+web-1: https://fastn.com/
+project-2: true
+title-2:  Lorem ipsum dolor sit amet, consectetur
+desc-2: enim ut libero mattis finibus. Duis vehicula mattis libero, sed porta enim tempor sit amet. Curabitur posuere feugiat mauris vel hendrerit. Nulla
+socials-2: true
+github-2: https://github.com/sreejitaduttaa
+web-2: https://fastn.com/
+project-3: true
+title-3: Nulla facilisis enim vel sapien 
+desc-3: ulla facilisis enim vel sapien hendrerit tincidunt. Aenean convallis velit quam, a pellentesque elit tincidunt a. Curabitur auctor metus non placerat consectetur.
+socials-3: true
+web-3: https://fastn.com/
+
+-- page.heading: Achievements and Participations
+
+
+-- page.achievement-set:
+title-1: Fastn Champions
+image-1: $assets.files.assets.images.fastn.svg
+desc-1:   The fastn Champion Program aims to engage enthusiastic individuals who are passionate about this journey. 
+year-1: 2023
+link-1: https://fastn.com/
+title-2: Fastn Champions
+image-2: $assets.files.assets.images.fastn.svg
+desc-2:   The fastn Champion Program aims to engage enthusiastic individuals who are passionate about this journey. 
+year-2: 2023
+link-2: https://fastn.com/
+
+-- page.achievement-set:
+title-1: Fastn Champions
+image-1: $assets.files.assets.images.fastn.svg
+desc-1:   The fastn Champion Program aims to engage enthusiastic individuals who are passionate about this journey. 
+year-1: 2023
+link-1: https://fastn.com/
+title-2: Fastn Champions
+image-2: $assets.files.assets.images.fastn.svg
+desc-2:   The fastn Champion Program aims to engage enthusiastic individuals who are passionate about this journey. 
+year-2: 2023
+link-2: https://fastn.com/
+
+-- end: ftd.column
+
 -- end: ftd.row
+
+
+-- ftd.shadow s: 
+color: #1B1B25
+x-offset.px: 6
+y-offset.px: 10
+blur.px: 20

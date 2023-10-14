@@ -1,0 +1,390 @@
+-- component banner:
+ftd.image-src image:
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+margin-bottom.px: 10
+
+-- ftd.image: $banner.image
+width: fill-container 
+height.fixed.px: 280
+fit: fill
+
+-- end: ftd.column
+
+-- end: banner
+
+
+-- component heading:
+caption topic:
+
+-- ftd.text: $heading.topic
+role: $heading-type
+color: #fff
+width: fill-container
+padding-vertical.px: 10 
+
+--  end: heading
+
+-- component project-set:
+boolean project-1: false
+string title-1: NULL
+optional body desc-1: NULL
+optional boolean socials-1: false
+optional string github-1: NULL
+optional string web-1: NULL
+optional boolean project-2: false
+optional string title-2: NULL
+optional body desc-2: NULL
+optional boolean socials-2: false
+optional string github-2: NULL
+optional string web-2: NULL
+optional boolean project-3: false
+optional string title-3: NULL
+optional body desc-3: NULL
+optional boolean socials-3: false
+optional string github-3: NULL
+optional string web-3: NULL
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+if: {$project-set.project-1 != false}
+
+-- ftd.column:
+width.fixed.px: 300
+height.fixed.px: 220 
+overflow-y: auto
+padding.px: 20
+margin-vertical.px: 10
+background.solid: #242430
+if: {$project-set.project-1 != false}
+
+-- ftd.text: $project-set.title-1
+role: $project-title-type
+color: #fff
+margin-bottom.px: 10
+text-align: start
+white-space: break-spaces 
+if: {$project-set.title-1 != NULL}
+
+-- ftd.text: $project-set.desc-1
+role: $project-desc-type
+color: #7D7D80
+margin-bottom.px: 10
+text-align: start
+white-space: break-spaces 
+if: {$project-set.desc-1 != NULL}
+
+-- ftd.row:
+width: fill-container
+margin-vertical.px: 10
+align-content: center
+spacing: space-around
+padding.px: 8
+background.solid: #FFC107
+border-radius.px: 5
+if: {$project-set.socials-1 != false}
+
+-- ftd.image: $assets.files.assets.images.github.png
+height.fixed.px: 20
+width.fixed.px: 20
+if: {$project-set.github-1 != NULL}
+cursor: pointer
+link: $project-set.github-1 
+open-in-new-tab: true 
+
+-- ftd.image: $assets.files.assets.images.web.png
+height.fixed.px: 20
+width.fixed.px: 20
+if: {$project-set.web-1 != NULL}
+cursor: pointer
+link: $project-set.web-1 
+open-in-new-tab: true 
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.px: 300
+height.fixed.px: 220 
+overflow-y: auto
+padding.px: 20
+margin-vertical.px: 10
+background.solid: #242430
+if: {$project-set.project-2 != false}
+
+-- ftd.text: $project-set.title-2
+role: $project-title-type
+color: #fff
+margin-bottom.px: 10
+text-align: start
+white-space: break-spaces 
+if: {$project-set.title-2 != NULL}
+
+-- ftd.text: $project-set.desc-2
+role: $project-desc-type
+color: #7D7D80
+margin-bottom.px: 10
+text-align: start
+white-space: break-spaces 
+if: {$project-set.desc-2 != NULL}
+
+-- ftd.row:
+width: fill-container
+margin-vertical.px: 10
+align-content: center
+spacing: space-around
+padding.px: 8
+background.solid: #FFC107
+border-radius.px: 5
+if: {$project-set.socials-2 != false}
+
+-- ftd.image: $assets.files.assets.images.github.png
+height.fixed.px: 20
+width.fixed.px: 20
+if: {$project-set.github-2 != NULL}
+cursor: pointer
+link: $project-set.github-2
+open-in-new-tab: true 
+
+-- ftd.image: $assets.files.assets.images.web.png
+height.fixed.px: 20
+width.fixed.px: 20
+if: {$project-set.web-2 != NULL}
+cursor: pointer
+link: $project-set.web-2
+open-in-new-tab: true 
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.px: 300
+height.fixed.px: 220 
+overflow-y: auto
+padding.px: 20
+margin-vertical.px: 10
+background.solid: #242430
+if: {$project-set.project-3 != false}
+
+-- ftd.text: $project-set.title-3
+role: $project-title-type
+color: #fff
+margin-bottom.px: 10
+text-align: start
+white-space: break-spaces 
+if: {$project-set.title-3 != NULL}
+
+-- ftd.text: $project-set.desc-3
+role: $project-desc-type
+color: #7D7D80
+margin-bottom.px: 10
+text-align: start
+white-space: break-spaces 
+if: {$project-set.desc-3 != NULL}
+
+-- ftd.row:
+width: fill-container
+margin-vertical.px: 10
+align-content: center
+spacing: space-around
+padding.px: 8
+background.solid: #FFC107
+border-radius.px: 5
+if: {$project-set.socials-3 != false}
+
+-- ftd.image: $assets.files.assets.images.github.png
+height.fixed.px: 20
+width.fixed.px: 20
+if: {$project-set.github-3 != NULL}
+cursor: pointer
+link: $project-set.github-3 
+open-in-new-tab: true 
+
+-- ftd.image: $assets.files.assets.images.web.png
+height.fixed.px: 20
+width.fixed.px: 20
+if: {$project-set.web-3 != NULL}
+cursor: pointer
+link: $project-set.web-3
+open-in-new-tab: true 
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: project-set
+
+-- component achievement-set:
+optional string title-1: NULL
+optional ftd.image-src image-1: NULL
+optional string desc-1: NULL
+optional string year-1: NULL
+optional string link-1: NULL
+optional string title-2: NULL
+optional ftd.image-src image-2: NULL
+optional string desc-2: NULL
+optional string year-2: NULL
+optional string link-2: NULL
+
+-- ftd.row:
+spacing.fixed.px: 50
+
+-- ftd.row:
+width.fixed.px: 400
+height.fixed.px: 150 
+padding.px: 20
+overflow: auto
+margin-vertical.px: 10
+background.solid: #242430
+spacing.fixed.px: 10
+if: {$achievement-set.title-1 != NULL}
+
+
+-- ftd.image: $achievement-set.image-1
+height.fixed.px: 120
+width.fixed.px: 120 
+fit: fill
+if: {$achievement-set.image-1 != NULL}
+
+-- ftd.column:
+
+-- ftd.text: $achievement-set.title-1 
+role: $achievement-title-type
+color: #fff
+margin-bottom.px: 5
+text-align: start
+white-space: break-spaces 
+if: {$achievement-set.title-1 != NULL}
+
+
+-- ftd.text: $achievement-set.desc-1 
+role: $achievement-desc-type
+color: #7D7D80
+margin-bottom.px: 3
+text-align: start
+white-space: break-spaces 
+if: {$achievement-set.desc-1 != NULL}
+
+
+-- ftd.text: $achievement-set.year-1 
+role: $achievement-desc-type
+color: #7D7D80
+margin-bottom.px: 8
+text-align: start
+white-space: break-spaces 
+if: {$achievement-set.year-1 != NULL}
+
+
+-- ftd.text: Know More >> 
+role: $achievement-desc-type
+color: #FFC107
+text-align: start
+white-space: break-spaces 
+cursor: pointer
+link: $achievement-set.link-1
+open-in-new-tab: true 
+if: {$achievement-set.link-1 != NULL}
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+
+-- ftd.row:
+width.fixed.px: 400
+height.fixed.px: 150 
+padding.px: 20
+overflow: auto
+margin-vertical.px: 10
+background.solid: #242430
+spacing.fixed.px: 10
+if: {$achievement-set.title-2 != NULL}
+
+
+-- ftd.image: $achievement-set.image-2
+height.fixed.px: 120
+width.fixed.px: 120 
+fit: fill
+if: {$achievement-set.image-2 != NULL}
+
+-- ftd.column:
+
+-- ftd.text: $achievement-set.title-2 
+role: $achievement-title-type
+color: #fff
+margin-bottom.px: 5
+text-align: start
+white-space: break-spaces 
+if: {$achievement-set.title-2 != NULL}
+
+
+-- ftd.text: $achievement-set.desc-2 
+role: $achievement-desc-type
+color: #7D7D80
+margin-bottom.px: 3
+text-align: start
+white-space: break-spaces 
+if: {$achievement-set.desc-2 != NULL}
+
+
+-- ftd.text: $achievement-set.year-2
+role: $achievement-desc-type
+color: #7D7D80
+margin-bottom.px: 8
+text-align: start
+white-space: break-spaces 
+if: {$achievement-set.year-2 != NULL}
+
+
+-- ftd.text: Know More >> 
+role: $achievement-desc-type
+color: #FFC107
+text-align: start
+white-space: break-spaces 
+cursor: pointer
+link: $achievement-set.link-2
+open-in-new-tab: true 
+if: {$achievement-set.link-2 != NULL}
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: achievement-set
+
+
+
+
+-- ftd.type heading-type:
+font-family: $assets.fonts.Poppins
+size.px: 22
+weight: 500
+
+-- ftd.type project-title-type:
+font-family: $assets.fonts.Poppins
+size.px: 14
+weight: 600
+
+-- ftd.type project-desc-type:
+font-family: $assets.fonts.Poppins
+size.px: 12
+weight: 400
+
+-- ftd.type achievement-title-type:
+font-family: $assets.fonts.Poppins
+size.px: 13
+weight: 500
+
+-- ftd.type achievement-desc-type:
+font-family: $assets.fonts.Poppins
+size.px: 11
+weight: 400
