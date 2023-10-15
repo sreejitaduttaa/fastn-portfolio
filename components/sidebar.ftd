@@ -1,5 +1,7 @@
 -- boolean $showa: false
 
+
+
 -- component profile:
 caption name:
 ftd.image-src profile-pic:
@@ -35,6 +37,23 @@ color: #7D7D80
 -- end: ftd.column
 
 -- end: profile
+
+
+
+-- component about-me:
+caption or body about: 
+
+-- ftd.text: $about-me.about
+padding-top.px: 10
+role: $details-type
+padding-horizontal.px: 20
+color: #7D7D80
+text-align: justify
+
+-- end: about-me
+
+
+
 
 
 -- component details:
@@ -100,6 +119,8 @@ color: #7D7D80
 
 
 
+
+
 -- component line:
 
 -- ftd.container:
@@ -121,6 +142,9 @@ border-color: #7D7D80
 -- end: line 
 
 
+
+
+
 -- component heading:
 caption topic:
 
@@ -132,6 +156,10 @@ padding-vertical.px: 10
 padding-horizontal.px: 20 
 
 -- end: heading
+
+
+
+
 
 -- component edu:
 string institution: 
@@ -175,6 +203,10 @@ if: {$edu.year != NULL}
 
 -- end: edu
 
+
+
+
+
 -- component work:
 string organisation: 
 optional string position: NULL
@@ -216,6 +248,10 @@ color: #7D7D80
 
 -- end: work
 
+
+
+
+
 -- component skill-set:
 caption skill-1-name: 
 ;; caption skill-1-percent:
@@ -225,7 +261,6 @@ optional string skill-3-name: NULL
 ;; caption skill-3-percent: NULL
 
 -- ftd.row:
-
 
 -- ftd.column:
 align-content: center
@@ -287,7 +322,6 @@ color: #fff
 
 -- end: ftd.column
 
-
 -- ftd.column:
 align-content: center
 margin.px: 10
@@ -321,6 +355,127 @@ color: #fff
 -- end: ftd.row
 
 -- end: skill-set
+
+
+
+
+
+
+
+-- component skill-set-2:
+ftd.image-src skill-1-image: NULL
+optional string skill-1-name: NULL
+optional ftd.image-src skill-2-image: NULL
+optional string skill-2-name: NULL
+optional ftd.image-src skill-3-image: NULL
+optional string skill-3-name: NULL
+
+
+-- ftd.row:
+margin-horizontal.px: 20
+margin-vertical.px: 10
+spacing.fixed.px: 10
+
+-- ftd.column:
+align-content: center
+height.fixed.px: 90
+width.fixed.px: 70
+spacing.fixed.px: 8
+overflow: hidden
+background.solid: #242430
+if: {$skill-set-2.skill-1-image != NULL}
+
+-- ftd.image: $skill-set-2.skill-1-image
+height.fixed.px: 40
+width.fixed.px: 40 
+fit: fill
+if: {$skill-set-2.skill-1-image != NULL}
+
+-- ftd.text: $skill-set-2.skill-1-name
+color: #fff
+role: $skill2-type
+white-space: break-spaces
+text-align: center
+if: {$skill-set-2.skill-1-name != NULL}
+
+-- ftd.text:   &nbsp;
+color: #fff
+role: $skill2-type
+white-space: break-spaces
+text-align: center
+if: {$skill-set-2.skill-1-name == NULL}
+
+-- end: ftd.column
+
+-- ftd.column:
+align-content: center
+height.fixed.px: 90
+width.fixed.px: 70
+spacing.fixed.px: 8
+overflow: hidden
+background.solid: #242430
+if: {$skill-set-2.skill-2-image != NULL}
+
+-- ftd.image: $skill-set-2.skill-2-image
+height.fixed.px: 40
+width.fixed.px: 40 
+fit: fill
+if: {$skill-set-2.skill-2-image != NULL}
+
+-- ftd.text: $skill-set-2.skill-2-name
+color: #fff
+role: $skill2-type
+white-space: break-spaces
+text-align: center
+if: {$skill-set-2.skill-2-name != NULL}
+
+-- ftd.text:   &nbsp;
+color: #fff
+role: $skill2-type
+white-space: break-spaces
+text-align: center
+if: {$skill-set-2.skill-2-name == NULL}
+
+-- end: ftd.column
+
+-- ftd.column:
+align-content: center
+height.fixed.px: 90
+width.fixed.px: 70
+spacing.fixed.px: 8
+overflow: hidden
+background.solid: #242430
+if: {$skill-set-2.skill-3-image != NULL}
+
+-- ftd.image: $skill-set-2.skill-3-image
+height.fixed.px: 40
+width.fixed.px: 40 
+fit: fill
+if: {$skill-set-2.skill-3-image != NULL}
+
+-- ftd.text: $skill-set-2.skill-3-name
+color: #fff
+role: $skill2-type
+white-space: break-spaces
+text-align: center
+if: {$skill-set-2.skill-3-name != NULL}
+
+-- ftd.text:   &nbsp;
+color: #fff
+role: $skill2-type
+white-space: break-spaces
+text-align: center
+if: {$skill-set-2.skill-3-name == NULL}
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: skill-set-2
+
+
+
+
 
 -- component skill-2:
 caption skill-name:
@@ -375,6 +530,10 @@ background.solid: #FFC107
 
 -- end: skill-2
 
+
+
+
+
 -- component cv:
 caption link:
 
@@ -394,12 +553,18 @@ $on-mouse-enter$: $ftd.set-bool($a = $showa, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $showa, v = false)
 
 -- ftd.text: RESUME
-color: #7D7D80
+color if { showa }: #7D7D80
+color: #fff
 role: $cv-type
+$on-mouse-enter$: $ftd.set-bool($a = $showa, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $showa, v = false)
 
 -- end: ftd.row
 
 -- end: cv
+
+
+
 
 -- component socials:
 caption boolean social: false
@@ -467,6 +632,13 @@ open-in-new-tab: true
 -- end: socials
 
 
+
+
+
+
+
+
+
 -- ftd.type name-type:
 font-family: $assets.fonts.Poppins
 size.px: 16
@@ -506,7 +678,7 @@ weight: 500
 
 -- ftd.type skill2-type:
 font-family: $assets.fonts.Poppins
-size.px: 13
+size.px: 12
 weight: 500
 
 -- ftd.type cv-type:

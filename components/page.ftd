@@ -8,7 +8,7 @@ margin-bottom.px: 10
 
 -- ftd.image: $banner.image
 width: fill-container 
-height.fixed.px: 280
+height.fixed.px: 220
 fit: fill
 
 -- end: ftd.column
