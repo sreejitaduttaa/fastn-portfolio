@@ -241,7 +241,7 @@ width.fixed.px: 400
 height.fixed.px: 150 
 padding.px: 20
 overflow: auto
-margin-vertical.px: 10
+margin-vertical.px: 15
 background.solid: #242430
 spacing.fixed.px: 10
 if: {$achievement-set.title-1 != NULL}
@@ -304,7 +304,7 @@ padding.px: 20
 overflow: auto
 margin-vertical.px: 10
 background.solid: #242430
-spacing.fixed.px: 10
+spacing.fixed.px: 15
 if: {$achievement-set.title-2 != NULL}
 
 
