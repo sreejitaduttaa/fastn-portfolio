@@ -28,6 +28,9 @@ background.solid: #1E1E28
 overflow-y: auto 
 margin-bottom.px: 10
 
+
+
+
 -- sidebar.details: 
 residence: India
 city: Kolkata
@@ -37,30 +40,14 @@ age: 19
 
 -- sidebar.line:
 
--- sidebar.heading: Coding 
+-- sidebar.heading: About Me
 
--- sidebar.skill-2: Flutter
-percent: 70
+-- sidebar.about-me: 
 
--- sidebar.skill-2: HTML
-percent: 80
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in lacus vitae ligula pulvinar convallis id vel lectus. Integer aliquet felis at sem finibus, egestas aliquet ligula tincidunt. Quisque a metus velit. Nulla lacus nunc, malesuada a est vitae, porttitor lacinia tortor. Aenean in elit et risus varius aliquam ut tincidunt libero. Nullam vitae finibus or
 
 -- sidebar.line:
 
-
--- sidebar.heading: Skills 
-
--- sidebar.skill-set:
-skill-1-name: Fastn 
-skill-2-name: CSS
-skill-3-name: JS
-
--- sidebar.skill-set:
-skill-1-name: HTML 
-;; skill-2-name: CSS
-;; skill-3-name: JS
-
--- sidebar.line:
 
 -- sidebar.heading: Work 
 
@@ -68,11 +55,11 @@ skill-1-name: HTML
 organisation: ABCD Enterprise
 position: Software Engineer
 location: Kolkata, West Bengal
-duration: 2020-2022
+duration: 2020 - 2022
 
 -- sidebar.work: 
 organisation: Freelancing
-duration: 2022-present
+duration: 2022 - present
 
 -- sidebar.line:
 
@@ -81,16 +68,69 @@ duration: 2022-present
 -- sidebar.edu: 
 institution: RCC Institution of Information Technology
 degree: BTech in Computer Science
-marks: CGPA-8.9
-year: 2022-2026
+marks: CGPA - 8.9
+year: 2022 - 2026
 
 -- sidebar.edu: 
 institution: Narayana School, Newtown
 degree: Higher Secondary Education
 marks: 91%
-year: 2020-2022
+year: 2020 - 2022
 
 -- sidebar.line:
+
+-- sidebar.heading: Skills 
+
+-- sidebar.skill-set-2:
+skill-1-image: $assets.files.assets.images.fastn.svg
+;; skill-1-name: Fastn
+skill-2-image: $assets.files.assets.images.html-5.png
+skill-2-name: HTML
+skill-3-image: $assets.files.assets.images.css-3.png
+skill-3-name: CSS
+
+-- sidebar.skill-set-2:
+skill-1-image: $assets.files.assets.images.flutter.png
+skill-1-name: Flutter
+skill-2-image: $assets.files.assets.images.mongodb.png
+skill-2-name: Mongodb
+skill-3-image: $assets.files.assets.images.github1.png
+skill-3-name: Github
+
+-- sidebar.line:
+
+-- sidebar.heading: Coding 
+
+-- sidebar.skill-2: C++
+percent: 70
+
+-- sidebar.skill-2: C
+percent: 80
+
+-- sidebar.skill-2: Python
+percent: 80
+
+-- sidebar.skill-2: Javascript
+percent: 60
+
+-- sidebar.line:
+
+
+;; -- sidebar.heading: Skills 
+
+;; -- sidebar.skill-set:
+;; skill-1-name: Fastn 
+;; skill-2-name: CSS
+;; skill-3-name: JS
+
+;; -- sidebar.skill-set:
+;; skill-1-name: HTML 
+;; ;; skill-2-name: CSS
+;; ;; skill-3-name: JS
+
+;; -- sidebar.line:
+
+
 
 -- sidebar.socials: true
 linkedin: https://www.linkedin.com/in/sreejitadutta/
@@ -104,12 +144,17 @@ discord: https://discord.com/users/774948048916840469
 -- end: ftd.column
 
 
+
+
+
+
+
 -- ftd.column:
-width.fixed.calc: 100% - 330pxcc
+width: fill-container
 overflow-y: auto 
 padding-bottom.px: 25
-padding-horizontal.px: 25
-;; margin-horizontal.px: 25
+;; padding-horizontal.px: 25
+margin-horizontal.px: 25
 
 -- page.banner: 
 image: $assets.files.assets.images.banner.png
@@ -145,9 +190,9 @@ web-1: https://fastn.com/
 project-2: true
 title-2:  Lorem ipsum dolor sit amet, consectetur
 desc-2: enim ut libero mattis finibus. Duis vehicula mattis libero, sed porta enim tempor sit amet. Curabitur posuere feugiat mauris vel hendrerit. Nulla
-socials-2: true
-github-2: https://github.com/sreejitaduttaa
-web-2: https://fastn.com/
+;; socials-2: true
+;; github-2: https://github.com/sreejitaduttaa
+;; web-2: https://fastn.com/
 project-3: true
 title-3: Nulla facilisis enim vel sapien 
 desc-3: ulla facilisis enim vel sapien hendrerit tincidunt. Aenean convallis velit quam, a pellentesque elit tincidunt a. Curabitur auctor metus non placerat consectetur.
