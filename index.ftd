@@ -144,6 +144,8 @@ discord: https://discord.com/users/774948048916840469
 
 
 
+
+
 -- ftd.column:
 width: fill-container
 overflow-y: auto 
@@ -158,7 +160,7 @@ image: $assets.files.assets.images.banner.png
 
 -- page.project-set:
 project-1: true
-title-1: Responsive Portfolio 
+title-1: consectetur adipiscing elit
 desc-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet sapien at elit vestibulum imperdiet. Duis id consectetur erat. Nulla mattis sapien quis mollis sodales. Aliquam placerat metus id eros posuere
 socials-1: true
 github-1: https://github.com/sreejitaduttaa/fastn-portfolio
