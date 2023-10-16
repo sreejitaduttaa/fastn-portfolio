@@ -1,3 +1,5 @@
+-- import: sreejitaduttaa.github.io/fastn-portfolio/colors
+
 -- component banner:
 ftd.image-src image:
 
@@ -83,11 +85,11 @@ margin-vertical.px: 10
 align-content: center
 spacing: space-around
 padding.px: 8
-background.solid: #FFC107
+background.solid: $colors.theme
 border-radius.px: 5
 if: {$project-set.socials-1 != false}
 
--- ftd.image: $assets.files.assets.images.github.png
+-- ftd.image: $assets.files.assets.images.githubi.png
 height.fixed.px: 20
 width.fixed.px: 20
 if: {$project-set.github-1 != NULL}
@@ -138,11 +140,11 @@ margin-vertical.px: 10
 align-content: center
 spacing: space-around
 padding.px: 8
-background.solid: #FFC107
+background.solid: $colors.theme
 border-radius.px: 5
 if: {$project-set.socials-2 != false}
 
--- ftd.image: $assets.files.assets.images.github.png
+-- ftd.image: $assets.files.assets.images.githubi.png
 height.fixed.px: 20
 width.fixed.px: 20
 if: {$project-set.github-2 != NULL}
@@ -193,11 +195,11 @@ margin-vertical.px: 10
 align-content: center
 spacing: space-around
 padding.px: 8
-background.solid: #FFC107
+background.solid: $colors.theme
 border-radius.px: 5
 if: {$project-set.socials-3 != false}
 
--- ftd.image: $assets.files.assets.images.github.png
+-- ftd.image: $assets.files.assets.images.githubi.png
 height.fixed.px: 20
 width.fixed.px: 20
 if: {$project-set.github-3 != NULL}
@@ -284,7 +286,7 @@ if: {$achievement-set.year-1 != NULL}
 
 -- ftd.text: Know More >> 
 role: $achievement-desc-type
-color: #FFC107
+color: $colors.theme
 text-align: start
 white-space: break-spaces 
 cursor: pointer
@@ -345,7 +347,7 @@ if: {$achievement-set.year-2 != NULL}
 
 -- ftd.text: Know More >> 
 role: $achievement-desc-type
-color: #FFC107
+color: $colors.theme
 text-align: start
 white-space: break-spaces 
 cursor: pointer

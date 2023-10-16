@@ -1,6 +1,6 @@
+-- import: sreejitaduttaa.github.io/fastn-portfolio/colors
+
 -- boolean $showa: false
-
-
 
 -- component profile:
 caption name:
@@ -274,7 +274,7 @@ align-content: center
 overflow: hidden
 padding.px: 30
 border-left-color: black
-border-color: #FFC107 
+border-color: $colors.theme
 border-width.px: 3
 
 -- ftd.text: 80%
@@ -305,7 +305,7 @@ align-content: center
 overflow: hidden
 padding.px: 30
 border-left-color: black
-border-color: #FFC107 
+border-color: $colors.theme
 border-width.px: 3
 
 -- ftd.text: 80%
@@ -335,7 +335,7 @@ align-content: center
 overflow: hidden
 padding.px: 30
 border-left-color: black
-border-color: #FFC107 
+border-color: $colors.theme
 border-width.px: 3
 
 -- ftd.text: 80%
@@ -520,7 +520,7 @@ height.fixed.px: 3
 -- ftd.container: 
 width.fixed.percent: $skill-2.percent
 height: fill-container
-background.solid: #FFC107
+background.solid: $colors.theme
 
 -- end: ftd.container
 
@@ -595,7 +595,7 @@ cursor: pointer
 link: $socials.linkedin
 open-in-new-tab: true 
 
--- ftd.image: $assets.files.assets.images.github.png
+-- ftd.image: $assets.files.assets.images.githubi.png
 height.fixed.px: 20
 width.fixed.px: 20 
 if: {$socials.github != NULL}
